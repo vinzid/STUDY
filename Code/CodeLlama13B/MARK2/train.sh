@@ -3,7 +3,7 @@ beam_size=1
 batch_size=2
 epoch=1
 max_input_size=2048
-model_name=CodeLlama-13b-hf # 13b/34b/7b
+model_name=CodeLlama-13b-hf # 13b/34b/70b
 input_dir=/Data/Transfer_dataset/2-Mark2
 output_dir=/Data/Transfer_dataset/Result/1_LLM4APR/result_CodeLlama-13B/model_set_mark2_2048_LORA
 

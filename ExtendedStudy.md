@@ -1,20 +1,26 @@
 
 # Extended Study
 
-<p aligh="center">
 This repository contains the code and data for the Extended Study.
    
 Experimental Code and Data: https://drive.google.com/drive/folders/12xIiZChs81NpUjGRCxHbuQEuT2ozHNB9?usp=sharing
-</p>
 
 ## Dependency
 * Python 3.10.8
 * PyTorch 1.13.1
 * Transformers
-* Peft
-* Bitsandbytes
+* Peft 0.9.0
+* Bitsandbytes 0.44.1
+* Triton 3.0.0
 * Accelerate
 * Sentencepiece
+* tiktoken
+* Hugging Face CLI
+
+## Prerequisite
+Login to Hugging Face Hub with [token](https://huggingface.co/settings/tokens) on terminal as [StarCoder](https://huggingface.co/bigcode/starcoderbase) is a gated modal.
+
+    huggingface-cli login
 
 
 ## LLM4APR study (Task 7)
@@ -40,7 +46,8 @@ The file structure of the artifact is as follow:
         
 ### Reproduction
 Download source code and datasets from https://drive.google.com/drive/folders/12xIiZChs81NpUjGRCxHbuQEuT2ozHNB9?usp=sharing.
-<b> Model Fine-tuning and Inference: </b>
+
+**Model Fine-tuning and Inference:**
     
     cd Code/1_LLM4APR
     
@@ -76,7 +83,8 @@ The file structure of the artifact is as follow:
         
 ### Reproduction
 Download source code and datasets from https://drive.google.com/drive/folders/12xIiZChs81NpUjGRCxHbuQEuT2ozHNB9?usp=sharing.
-<b> Model Fine-tuning and Inference: </b>
+
+**Model Fine-tuning and Inference:**
     
     cd Code/2_PEFT4LLM
     
@@ -130,7 +138,8 @@ The file structure of the artifact is as follow:
         
 ### Reproduction
 Download source code and datasets from https://drive.google.com/drive/folders/12xIiZChs81NpUjGRCxHbuQEuT2ozHNB9?usp=sharing.
-<b> Model Fine-tuning and Inference: </b>
+
+**Model Fine-tuning and Inference:**
     
     cd Code/3_APR4LLM
     
@@ -151,7 +160,7 @@ Download source code and datasets from https://drive.google.com/drive/folders/12
     bash test_d4j.sh
 
     # Fine-tuning with the basic NMT
-    cd MARK3
+    cd MARK2
     bash train.sh     
     bash merge.sh     
     bash test_d4j.sh
