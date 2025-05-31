@@ -1,11 +1,9 @@
 
 # Initial Study
 
-<p aligh="center">
-This repository contains the code for <b> An Empirical Study on Fine-tuning Large Language Models of Code for Automated Program Repair </b> and the Page (https://sites.google.com/view/llmc4apr) that has some visualizd data.
+This repository contains the code for <b> An Empirical Study on Fine-tuning Large Language Models of Code for Automated Program Repair </b> and the Page (https://sites.google.com/view/llmc4apr) that has some visualized data.
    
 Experimental Checkpoint, Result, and Data (130G): https://drive.google.com/drive/folders/1-3bA4fkvi18Pl9daIAhqUY4s7_tEph-d?usp=sharing
-</p>
 
 ## Dependency
 * Python 3.10.8
@@ -35,7 +33,8 @@ The file structure of the artifact is as follow:
         
 ### Reproduction
 Download source code and datasets from https://drive.google.com/drive/folders/1-3bA4fkvi18Pl9daIAhqUY4s7_tEph-d?usp=sharing.
-<b> Model Fine-tuning and Inference: </b>
+
+**Model Fine-tuning and Inference:**
     
     cd Code
     
