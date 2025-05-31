@@ -148,7 +148,7 @@ def computeMaps(predictions, goldfile):
     predictionMap[rid] = [splitPuncts(pred.strip().lower())]
 
   for row in gf:
-    (rid, pred) = row.split('\t') 
+    (rid, pred) = row.split('\t', 1)
     if rid in predictionMap: # Only insert if the id exists for the method
       if rid not in goldMap:
         goldMap[rid] = []
