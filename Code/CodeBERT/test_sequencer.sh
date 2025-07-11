@@ -1,6 +1,6 @@
 data_dir=/SS970evo/datasets/SequenceR_dataset/preprocess/mark2_src
-output_dir=/SS970evo/datasets/SequenceR_dataset/result_CodeBERT/mark2_src/model_set1
-test_model_type=best-bleu #last best-bleu/ppl
+output_dir=/SS970evo/datasets/SequenceR_dataset/result_CodeBERT/mark2/model_set1
+test_model_type=${1:-best-bleu}
 
 mkdir -p $output_dir
 

@@ -1,7 +1,9 @@
 # data_dir=/SS970evo/datasets/VulRepair_dataset/preprocess/mark2
 # output_dir=/SS970evo/datasets/VulRepair_dataset/result_CodeBERT/mark2/model_set1
-data_dir=/SS970evo/datasets/Tufano_dataset/datasets/preprocess/50/mark2_src
-output_dir=/SS970evo/datasets/Tufano_dataset/datasets/result_CodeBERT/50/mark2_src/model_set2
+size=${1:-50}
+code_rep=${2:-mark2_src}
+data_dir=/SS970evo/datasets/Tufano_dataset/datasets/preprocess/$size/$code_rep
+output_dir=/SS970evo/datasets/Tufano_dataset/result_CodeBERT/$size/$code_rep/model_set1
 
 mkdir -p $output_dir
 

@@ -1,7 +1,7 @@
-data_dir=/SS970evo/datasets/Defects4J_dataset/mark2_D4j_v1
+data_dir=/SS970evo/datasets/Defects4J_dataset/mark2_D4j_short_v1
 model_dir=/SS970evo/datasets/Recoder_dataset/result_CodeBERT/mark2/model_set1
 output_dir=$model_dir/D4J_note
-test_model_type=last #last best-bleu/ppl
+test_model_type=${1:-last}
 
 mkdir -p $output_dir
 
@@ -10,7 +10,7 @@ python run_sequencer.py \
         --model_type roberta \
         --model_name_or_path microsoft/codebert-base \
         --load_model_path $model_dir/checkpoint-$test_model_type/pytorch_model.bin \
-        --test_filename $data_dir/note-src-test.txt,$data_dir/note-tgt-test.txt \
+        --test_filename $data_dir/src-test.txt,$data_dir/tgt-test.txt \
         --output_dir $output_dir \
         --max_source_length 512 \
         --max_target_length 512 \

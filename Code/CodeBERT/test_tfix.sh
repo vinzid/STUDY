@@ -1,6 +1,6 @@
 data_dir=/SS970evo/datasets/TFix_dataset/mark2
 output_dir=/SS970evo/datasets/TFix_dataset/result_CodeBERT/mark2_src/model_set2
-test_model_type=best-bleu #last best-bleu/ppl
+test_model_type=${1:-best-bleu}
 
 mkdir -p $output_dir
 

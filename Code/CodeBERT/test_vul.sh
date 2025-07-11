@@ -1,6 +1,6 @@
 data_dir=/SS970evo/datasets/VulRepair_dataset/preprocess/mark_vr
 output_dir=/SS970evo/datasets/VulRepair_dataset/result_CodeBERT/mark_vr/model_set1
-test_model_type=best-bleu #last best-bleu/ppl
+test_model_type=${1:-best-bleu}
 
 mkdir -p $output_dir
 

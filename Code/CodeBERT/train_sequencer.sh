@@ -1,4 +1,4 @@
-data_dir=/SS970evo/datasets/SequenceR_dataset/preprocess/mark2
+data_dir=/SS970evo/datasets/SequenceR_dataset/preprocess/mark2_src
 output_dir=/SS970evo/datasets/SequenceR_dataset/result_CodeBERT/mark2/model_set1
 # data_dir=/SS970evo/datasets/Tufano_dataset/datasets/preprocess/50/demo_file
 # output_dir=/SS970evo/datasets/Tufano_dataset/datasets/result_CodeBERT/50/demo_file/model_set2
