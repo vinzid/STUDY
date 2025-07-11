@@ -1,6 +1,8 @@
-data_dir=/SS970evo/datasets/Tufano_dataset/datasets/preprocess/50/ori_src
-output_dir=/SS970evo/datasets/Tufano_dataset/datasets/result_CodeBERT/50/ori_src/model_set1
-test_model_type=last #last best-bleu/ppl
+size=${1:-50}
+code_rep=${2:-mark2_src}
+data_dir=/SS970evo/datasets/Tufano_dataset/datasets/preprocess/$size/$code_rep
+output_dir=/SS970evo/datasets/Tufano_dataset/result_CodeBERT/$size/$code_rep/model_set1
+test_model_type=${3:-last}
 
 mkdir -p $output_dir
 
@@ -16,4 +18,4 @@ python run.py \
         --beam_size 5 \
         --eval_batch_size 16 \
         --learning_rate 5e-5 \
-        2>&1 | tee $output_dir/test20230426_$test_model_type.log
+        2>&1 | tee $output_dir/Tufano_mark2_test_${test_model_type/best-/}_log.txt

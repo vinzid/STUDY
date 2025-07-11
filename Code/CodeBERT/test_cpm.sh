@@ -1,7 +1,7 @@
 data_dir=/SS970evo/datasets/Defects4J_dataset/mark2_D4j_short_v2
 model_dir=/SS970evo/datasets/CPatMiner_dataset/result_CodeBERT/mark2/model_set1
 output_dir=$model_dir/D4J_V2_100_short
-test_model_type=best-ppl #last best-bleu/ppl
+test_model_type=${1:-best-ppl}
 
 mkdir -p $output_dir
 
